@@ -1,0 +1,5 @@
+.cvad{display:block;background:#A7BEF6;width:15px;height:15px;position:absolute;bottom:30%;left:-10px;transition:all .4s ease;animation:cvad 5s linear infinite}
+.cvad.active{right:20px;left:unset;width:10px;height:10px;background:#FFD702;animation:cvad 7s linear infinite alternate-reverse}
+@keyframes cvad{0%{transform:translate(0)}30%{transform:translate(-150%,-700%)}60%{transform:translate(300%,-1800%)}80%{transform:translate(200%,-800%)}100%{transform:translate(0)}}
+.cvad{left:30px}
+.cvad.active{right:40px;left:unset}
