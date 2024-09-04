@@ -1,5 +1,27 @@
-.cvad{display:block;background:#A7BEF6;width:15px;height:15px;position:absolute;bottom:30%;left:-10px;transition:all .4s ease;animation:cvad 5s linear infinite}
-.cvad.active{right:20px;left:unset;width:10px;height:10px;background:#FFD702;animation:cvad 7s linear infinite alternate-reverse}
-@keyframes cvad{0%{transform:translate(0)}30%{transform:translate(-150%,-700%)}60%{transform:translate(300%,-1800%)}80%{transform:translate(200%,-800%)}100%{transform:translate(0)}}
-.cvad{left:30px}
-.cvad.active{right:40px;left:unset}
+.wts-phone-circle{display:block;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:418px;height:418px;background-position:center center;background-size:100% 100%;background-repeat:no-repeat;transition:all .4s ease;animation:circ-1 25s infinite linear;border-radius:50%}@keyframes circ-1{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.wts-phone-circle.active{width:550px;height:550px;animation:circ-1 35s infinite linear}
+.wts-phone-circle::after,.wts-phone-circle::before{animation:circ-1 15s infinite linear;position:absolute;content:'';width:10px;height:10px;background:#AFF8C8;right:36%;transition:all .4s linear}
+.wts-phone-circle::before{background:#FFEEB4;left:36%;transition:all .4s linear;bottom:0;right:unset}
+.wts-phone-circle.active::after{right:36%;width:15px;height:15px}
+.wts-phone-circle.active::before{left:38%;background:#A7BEF6;width:12px;height:12px}
+.wts-phone-circle.active{width:600px;height:600px}
+.wts-phone-circle{width:450px;height:450px}
+ .wts-phone-circle {
+                opacity: 0.2;
+                background-image: url("data:image/svg+xml;utf8,<svg width='90%' height='90%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' rx='50%' style='fill:none; stroke:grey; stroke-width:2; stroke-dasharray:8 8'/></svg>");
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                width: 418px;
+                height: 418px;
+                background-position: center center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                transition: all .4s ease;
+                animation: circ-1 25s infinite linear;
+                border-radius: 50%
+            }
+            @keyframes circ-1{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
